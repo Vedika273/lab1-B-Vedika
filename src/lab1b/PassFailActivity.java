@@ -5,18 +5,21 @@
 package lab1b;
 
 /**
- *
+ * A PassFailActivity only returns 'P' or 'F'
+ * depending on whether the score meets the minimum.
  * @author Vedika
  */
 public class PassFailActivity extends GradedActivity{
     private double minPassingScore;
     
+    //constructor , stores the minimum passing score
     public PassFailActivity(double mps) {
-        
+        this.minPassingScore = mps; 
     }
     
-    public char GetGrade(int score) {
-       if (score >= minPassingScore)  {
+    @Override
+    public char GetGrade() {
+       if (getScore() >= minPassingScore)  {
            return 'P';
        } else {
            return 'F';
