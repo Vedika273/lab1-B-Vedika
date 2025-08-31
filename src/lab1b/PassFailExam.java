@@ -19,6 +19,8 @@ public class PassFailExam extends PassFailActivity {
     //constrcutor
     public PassFailExam(int questions , int missed, double minPassingScore ) {
         
+        super(minPassingScore);   //passing the minPassingScore to the constructor of PassFailActivity (superclass)
+        
         if (questions <= 0) {
             System.out.println("the number of questions must be more than 0");
         }
@@ -29,9 +31,7 @@ public class PassFailExam extends PassFailActivity {
         if (minPassingScore < 0.0 || minPassingScore > 100.0) {
             System.out.println("minPassingScore must be between 0 and 100");
         }
-        
-        
-        super(minPassingScore);   //passing the minPassingScore to the constructor of PassFailActivity (superclass)
+       
         this.numQuestions = questions; 
         this.numMissed = missed; 
         
