@@ -13,6 +13,10 @@ public class GradedActivity {
     private double score; 
     
     public void setScore(double score) {
+        if (score < 0 || score > 100 ) {
+            System.out.println("Error : score must be between 0 and 100");
+            return;
+        }
         this.score = score;
     }
     
@@ -21,10 +25,6 @@ public class GradedActivity {
     }
     
     public char getGrade(double score) {
-        
-        if (score > 100 || score < 0) {
-            System.out.println("score can not exceed 100 nor be negatif");
-        }
         
         if (score >= 90) {
             return 'A';
@@ -38,11 +38,8 @@ public class GradedActivity {
         else if (score >= 60) {
             return 'D';
         }
-        else if (score < 60 ) {
-            return 'F';
-        }
         else {
-            return '0';  //never arrive here
+            return 'F';
         }
      }
 }
