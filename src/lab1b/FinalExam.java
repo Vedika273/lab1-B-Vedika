@@ -36,6 +36,10 @@ public class FinalExam extends GradedActivity {
     public int getNumMissed() {
         return numMissed;
     } 
+    
+    public int getNumQuestions() {
+        return numQuestions; 
+    }
    
 }
 

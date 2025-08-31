@@ -17,12 +17,16 @@ public class PassFailActivity extends GradedActivity{
         this.minPassingScore = mps; 
     }
     
-    @Override
+    
     public char GetGrade() {
        if (getScore() >= minPassingScore)  {
            return 'P';
        } else {
            return 'F';
        }
+    }
+    
+    public double getminPassingScore() {
+        return minPassingScore; 
     }
 }
