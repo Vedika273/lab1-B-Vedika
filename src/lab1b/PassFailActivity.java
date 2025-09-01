@@ -21,9 +21,9 @@ public class PassFailActivity extends GradedActivity{
     public char GetGrade() {
        if (getScore() >= minPassingScore)  {
            return 'P';
-       } else {
+        }else{
            return 'F';
-       }
+        }
     }
     
     public double getminPassingScore() {

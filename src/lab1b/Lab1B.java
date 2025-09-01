@@ -45,6 +45,7 @@ public class Lab1B {
         
 
         //Step 5 : CourseGrades with Analyzable
+        
         System.out.println("=== Step 5 : CourseGrades Demo ===");
         
         //lab activity 
@@ -72,7 +73,9 @@ public class Lab1B {
         
         
         
+        
         //Step 6 DEMO
+        
         System.out.println("== Step 6 : CourseGrade");
         
         //lab Activity

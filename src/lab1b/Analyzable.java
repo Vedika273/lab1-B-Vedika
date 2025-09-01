@@ -11,6 +11,7 @@ package lab1b;
  * 
  * @author Vedika
  */
+
 public interface Analyzable {
    double getAverage();
    GradedActivity getHighest();

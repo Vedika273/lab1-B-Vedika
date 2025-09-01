@@ -36,20 +36,20 @@ public class CourseGrade implements Analyzable{
     }
     
     @Override
-public String toString() {
-    String result = "";
-    String[] labels = {"Lab", "Pass/Fail Exam", "Essay", "Final Exam"};
+    public String toString() {
+        String result = "";
+        String[] labels = {"Lab", "Pass/Fail Exam", "Essay", "Final Exam"};
 
-    for (int i = 0; i < grades.length; i++) {
-        if (grades[i] != null) {
-            result += labels[i]
-                    + ": Score : " + grades[i].getScore()
-                    + ", Grade :" + grades[i].getGrade()
-                    + "\n";
+        for (int i = 0; i < grades.length; i++) {
+            if (grades[i] != null) {
+                result += labels[i]
+                        + ": Score : " + grades[i].getScore()
+                        + ", Grade :" + grades[i].getGrade()
+                        + "\n";
+            }
         }
-    }
     return result;
-}
+    }
 
 
     @Override

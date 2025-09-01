@@ -51,6 +51,5 @@ public class PassFailExam extends PassFailActivity {
     
     public int getNumQuestions() {
         return numQuestions; 
-    }
-    
+    } 
 }
