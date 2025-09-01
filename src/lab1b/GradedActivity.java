@@ -5,7 +5,9 @@
 package lab1b;
 
 /**
- *
+ * Stores numeric value of the grade
+ * Also converts to letter grade 
+ * 
  * @author Vedika
  */
 public class GradedActivity {
