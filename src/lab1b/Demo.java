@@ -6,7 +6,7 @@ package lab1b;
  * 
  * @author Vedika
  */
-public class Lab1B {
+public class Demo {
 
     public static void main(String[] args) {
         
