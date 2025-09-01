@@ -43,8 +43,8 @@ public String toString() {
     for (int i = 0; i < grades.length; i++) {
         if (grades[i] != null) {
             result += labels[i]
-                    + ": Score = " + grades[i].getScore()
-                    + ", Grade = " + grades[i].getGrade()
+                    + ": Score : " + grades[i].getScore()
+                    + ", Grade :" + grades[i].getGrade()
                     + "\n";
         }
     }
@@ -68,21 +68,26 @@ public String toString() {
 
     @Override
     public GradedActivity getHighest() {
-        GradedActivity highest = grades[0];
-        for (int i = 1; i < grades.length; i++) {
-            if (grades[i] != null && grades[i].getScore() > highest.getScore()) {
-                highest = grades[i];
-            }
+        GradedActivity highest = null;
+        
+        for (GradedActivity g : grades) {
+           if (g != null) {
+               if (highest == null || g.getScore() > highest.getScore())
+                   highest = g;
+           } 
         }
         return highest;
     }
 
     @Override
     public GradedActivity getLowest() {
-        GradedActivity lowest = grades[0];
-        for (int i = 1; i < grades.length; i++) {
-            if (grades[i] != null && grades[i].getScore() <lowest.getScore()) {
-                lowest = grades[i];
+        GradedActivity lowest = null;
+        
+        for (GradedActivity g : grades) {
+            if (g != null) {
+                if (lowest == null || g.getScore() < lowest.getScore()){
+                    lowest = g;
+                }
             }
         }
         return lowest; 
