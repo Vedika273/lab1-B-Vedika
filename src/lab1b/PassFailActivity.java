@@ -1,12 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+//https://github.com/Vedika273/lab1-B-Vedika
+
 package lab1b;
 
 /**
  * A PassFailActivity only returns 'P' or 'F'
- * depending on whether the score meets the minimum.
+ * depending on whether the score meets the minimum passing grade
  * @author Vedika
  */
 public class PassFailActivity extends GradedActivity{
